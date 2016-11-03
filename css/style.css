@@ -1,0 +1,63 @@
+#search{
+  margin-top: 75px;
+}
+#searchForm{
+  width:100%;
+}
+#searchInput, #log_in{
+  margin-top: 5px;
+}
+#results{
+  margin-top: 83px;
+}
+/*input for title of movie*/
+#titleMovie {
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 2px solid #DC1F25;
+    font-size: 2em;
+    z-index: 2;
+    position: absolute;
+    margin-top: 30%;
+    margin-left: 5%;
+    /*width: 20px;*/
+}
+/*button for searching movie*/
+#searchBtn{
+  /*background-image: url("./../images/movieCam.gif");
+  background-repeat: no-repeat;*/
+  z-index: 2;
+  position: absolute;
+  margin-top: 25%;
+  margin-left: 40%;
+  /*width: 100px;
+  height: 100px;;*/
+}
+#posterImg{
+  width: 300px;
+  height: 370px;
+}
+#yearOfRelease {
+	font-size: 22px;
+	position: absolute;
+	top: -10px;
+	right: -10px;
+	padding: 10px;
+}
+.thumbnail{
+  height: 490px;
+}
+/*pagination links*/
+.pageNavLink{
+  align-content: center;
+  align-self: center;
+  padding: 10px;
+  background-color: rgb(10, 42, 122);
+  color: #fff;
+}
+ a.pageNavLink:hover{
+  color: rgb(10, 42, 122);
+  background-color:#fff;
+  text-decoration: none;
+}

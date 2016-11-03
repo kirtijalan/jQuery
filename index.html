@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap CSS -->
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="includes/css/bootstrap-glyphicons.css" rel="stylesheet">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Movie Search</title>
+  <!-- css custom style -->
+  <link rel="stylesheet" href="./css/style.css">
+  <!-- script  -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js" ></script>
+  <script src="./js/search.js"></script>
+</head>
+<body>
+  <!-- Nav bar -->
+
+		<div id="main">
+			<div class="navbar navbar-default navbar-fixed-top">
+				<div class="container">
+					<!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+			        <!-- <span class="sr-only">Toggle navigation</span> -->
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+	      		</button>
+						<a class="navbar-brand" href="/">LOGO</a>
+					</div>
+					<div class="collapse navbar-collapse"  id="bs-example-navbar-collapse-1">
+						<ul class="nav navbar-nav">
+							<li class="active">
+								<a href="#">Movies</a>
+							</li>
+							<li>
+								<a href="#">TV Shows</a>
+							</li>
+							<li>
+								<a href="#">Reviews</a>
+							</li>
+						</ul>
+
+						<ul class="nav nav-pills navbar-right">
+              <li>
+                <span id="searchForm" style="display: none;" class="navbar-left">
+    							<input type="text" class="form-control" placeholder="Search..." id="searchInput" autofocus>
+    							<!-- <button type="button" class="btn btn-default" id="searchFormBtn" width=20%><span class="glyphicon glyphicon-search"></span></button> -->
+    						</span>
+              </li>
+							<li role="presentation">
+								<a href="#">Register</a>
+							</li>
+	  					<li role="presentation" class="active">
+								<a href="#" id="log_in">Log In</a>
+							</li>
+              <li role="presentation">
+								<a href="#">Location</a>
+							</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+      <!-- container -->
+      <div class="container">
+        <section id="search">
+          <div id="inputBlock">
+            <input type="text" placeholder="Enter the Movie Title" id="titleMovie" autofocus>
+            <img src="./images/movieCam.gif" alt="" id="searchBtn" class="img-responsive">
+          </div>
+          <img src="./images/searchBg.jpg" class="img-responsive" alt="title Bg">
+        </section>
+        <input type='hidden' id='current_page' />
+        <input type='hidden' id='show_per_page' />
+        <div class="col-12" id="results">
+					<center><h3 id="searchResult"></h3></center>
+					<div class="thumbnailsRow">
+          </div>
+        </div>
+        <!-- <ul id="movieData"></ul> -->
+        <center><div class="col-lg-12" id='page_navigation'></div></center>
+      </div>
+      <center><img src="./images/credits.png" alt=""></center>
+
+</body>
+</html>
